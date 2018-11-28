@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B8B24C02162A76A0078A482 /* MaaSDocDetectionPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8B24BD2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.h */; };
+		6B8B24C12162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B24BE2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m */; };
+		6B8B24C22162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8B24BE2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m */; };
+		6B8B24C32162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8B24BF2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib */; };
+		6B8B24C42162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B8B24BF2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib */; };
+		6B8EC65A2152CF12002C38A4 /* MaaSDocDetectionUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC6582152CF12002C38A4 /* MaaSDocDetectionUtil.cpp */; };
+		6B8EC65B2152CF12002C38A4 /* MaaSDocDetectionUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC6582152CF12002C38A4 /* MaaSDocDetectionUtil.cpp */; };
+		6B8EC65C2152CF12002C38A4 /* MaaSDocDetectionUtil.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6B8EC6592152CF12002C38A4 /* MaaSDocDetectionUtil.hpp */; };
+		6B8EC65F2152D451002C38A4 /* MaaSDocDetectionSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8EC65D2152D451002C38A4 /* MaaSDocDetectionSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B8EC6602152D451002C38A4 /* MaaSDocDetectionSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC65E2152D451002C38A4 /* MaaSDocDetectionSDK.mm */; };
+		6B8EC6612152D451002C38A4 /* MaaSDocDetectionSDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC65E2152D451002C38A4 /* MaaSDocDetectionSDK.mm */; };
+		6B8EC69221544FEF002C38A4 /* MaaSDocDetectionLiveCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8EC68E21544FEF002C38A4 /* MaaSDocDetectionLiveCapture.h */; };
+		6B8EC69321544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B8EC68F21544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.h */; };
+		6B8EC69421544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC69021544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m */; };
+		6B8EC69521544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC69021544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m */; };
+		6B8EC69621544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC69121544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m */; };
+		6B8EC69721544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC69121544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m */; };
+		6BB3C8AF2167E310009583FA /* UIImage+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB3C8AE2167E310009583FA /* UIImage+Utils.h */; };
+		6BB3C8B12167E34D009583FA /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB3C8B02167E34D009583FA /* UIImage+Utils.m */; };
+		6BB3C8B22167E34D009583FA /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB3C8B02167E34D009583FA /* UIImage+Utils.m */; };
+		6BCF94A0215027CF00CC882B /* MaaSDocDetectionSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCF9496215027CE00CC882B /* MaaSDocDetectionSDKFramework.framework */; };
+		6BCF94A5215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF94A4215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.m */; };
+		6BCF94A7215027CF00CC882B /* MaaSDocDetectionSDKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF9499215027CE00CC882B /* MaaSDocDetectionSDKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BCF955C21506CC000CC882B /* UIImage+OpenCV.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF955B21506CC000CC882B /* UIImage+OpenCV.h */; };
+		6BCF960521506DCA00CC882B /* MaaSDocDetectionSDKPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF960421506DCA00CC882B /* MaaSDocDetectionSDKPrefix.pch */; };
+		6BCF960C21506F5B00CC882B /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF960B21506F5B00CC882B /* UIImage+OpenCV.mm */; };
+		6BCF960D21506F5B00CC882B /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF960B21506F5B00CC882B /* UIImage+OpenCV.mm */; };
+		6BCF9610215075C700CC882B /* MaaSParameterOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF960E215075C700CC882B /* MaaSParameterOptions.cpp */; };
+		6BCF9611215075C700CC882B /* MaaSParameterOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF960E215075C700CC882B /* MaaSParameterOptions.cpp */; };
+		6BCF9612215075C700CC882B /* MaaSParameterOptions.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF960F215075C700CC882B /* MaaSParameterOptions.hpp */; };
+		6BCF961521517AED00CC882B /* MaaSImageProcessBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961321517AED00CC882B /* MaaSImageProcessBase.cpp */; };
+		6BCF961621517AED00CC882B /* MaaSImageProcessBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961321517AED00CC882B /* MaaSImageProcessBase.cpp */; };
+		6BCF961721517AED00CC882B /* MaaSImageProcessBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF961421517AED00CC882B /* MaaSImageProcessBase.hpp */; };
+		6BCF961A21517DB700CC882B /* cvneon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961821517DB700CC882B /* cvneon.cpp */; };
+		6BCF961B21517DB700CC882B /* cvneon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961821517DB700CC882B /* cvneon.cpp */; };
+		6BCF961C21517DB700CC882B /* cvneon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF961921517DB700CC882B /* cvneon.h */; };
+		6BCF96202151817100CC882B /* MaaSImageProcessFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF961E2151817100CC882B /* MaaSImageProcessFacade.h */; };
+		6BCF96212151817100CC882B /* MaaSImageProcessFacade.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961F2151817100CC882B /* MaaSImageProcessFacade.mm */; };
+		6BCF96222151817100CC882B /* MaaSImageProcessFacade.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF961F2151817100CC882B /* MaaSImageProcessFacade.mm */; };
+		6BCF9626215183DF00CC882B /* MaaSEdgeDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9624215183DF00CC882B /* MaaSEdgeDetection.cpp */; };
+		6BCF9627215183DF00CC882B /* MaaSEdgeDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9624215183DF00CC882B /* MaaSEdgeDetection.cpp */; };
+		6BCF9628215183DF00CC882B /* MaaSEdgeDetection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF9625215183DF00CC882B /* MaaSEdgeDetection.hpp */; };
+		6BCF962C21518B2300CC882B /* MaaSContourDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF962A21518B2300CC882B /* MaaSContourDetection.cpp */; };
+		6BCF962D21518B2300CC882B /* MaaSContourDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF962A21518B2300CC882B /* MaaSContourDetection.cpp */; };
+		6BCF962E21518B2300CC882B /* MaaSContourDetection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF962B21518B2300CC882B /* MaaSContourDetection.hpp */; };
+		6BCF96322152199400CC882B /* MaaSHoughLinesDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF96302152199400CC882B /* MaaSHoughLinesDetection.cpp */; };
+		6BCF96332152199400CC882B /* MaaSHoughLinesDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF96302152199400CC882B /* MaaSHoughLinesDetection.cpp */; };
+		6BCF96342152199400CC882B /* MaaSHoughLinesDetection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BCF96312152199400CC882B /* MaaSHoughLinesDetection.hpp */; };
+		6BFDC85221643469000FA40E /* MaaSCroppedImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFDC85021643469000FA40E /* MaaSCroppedImage.cpp */; };
+		6BFDC85321643469000FA40E /* MaaSCroppedImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BFDC85021643469000FA40E /* MaaSCroppedImage.cpp */; };
+		6BFDC85421643469000FA40E /* MaaSCroppedImage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6BFDC85121643469000FA40E /* MaaSCroppedImage.hpp */; };
+		89FFA84203848EDD0D95E4F2 /* libPods-MaaSDocDetectionSDKFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2469E4813F5EC942FFBCE0 /* libPods-MaaSDocDetectionSDKFrameworkTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BCF94A1215027CF00CC882B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCF948D215027CE00CC882B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BCF9495215027CE00CC882B;
+			remoteInfo = MaaSDocDetectionSDKFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C278E9BAC05918F52F7343E /* Pods-MaaSDocDetectionSDKFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaaSDocDetectionSDKFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaaSDocDetectionSDKFramework/Pods-MaaSDocDetectionSDKFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		6B8B24BD2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionPreviewViewController.h; sourceTree = "<group>"; };
+		6B8B24BE2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaaSDocDetectionPreviewViewController.m; sourceTree = "<group>"; };
+		6B8B24BF2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaaSDocDetectionPreviewViewController.xib; sourceTree = "<group>"; };
+		6B8EC6582152CF12002C38A4 /* MaaSDocDetectionUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSDocDetectionUtil.cpp; sourceTree = "<group>"; };
+		6B8EC6592152CF12002C38A4 /* MaaSDocDetectionUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSDocDetectionUtil.hpp; sourceTree = "<group>"; };
+		6B8EC65D2152D451002C38A4 /* MaaSDocDetectionSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionSDK.h; sourceTree = "<group>"; };
+		6B8EC65E2152D451002C38A4 /* MaaSDocDetectionSDK.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MaaSDocDetectionSDK.mm; sourceTree = "<group>"; };
+		6B8EC68E21544FEF002C38A4 /* MaaSDocDetectionLiveCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionLiveCapture.h; sourceTree = "<group>"; };
+		6B8EC68F21544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionAVCamPreviewView.h; sourceTree = "<group>"; };
+		6B8EC69021544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaaSDocDetectionAVCamPreviewView.m; sourceTree = "<group>"; };
+		6B8EC69121544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaaSDocDetectionLiveCapture.m; sourceTree = "<group>"; };
+		6BB3C8AE2167E310009583FA /* UIImage+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		6BB3C8B02167E34D009583FA /* UIImage+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
+		6BCF9496215027CE00CC882B /* MaaSDocDetectionSDKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaaSDocDetectionSDKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCF9499215027CE00CC882B /* MaaSDocDetectionSDKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionSDKFramework.h; sourceTree = "<group>"; };
+		6BCF949A215027CE00CC882B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BCF949F215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaaSDocDetectionSDKFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCF94A4215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaaSDocDetectionSDKFrameworkTests.m; sourceTree = "<group>"; };
+		6BCF94A6215027CF00CC882B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BCF955B21506CC000CC882B /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		6BCF960421506DCA00CC882B /* MaaSDocDetectionSDKPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSDocDetectionSDKPrefix.pch; sourceTree = "<group>"; };
+		6BCF960B21506F5B00CC882B /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		6BCF960E215075C700CC882B /* MaaSParameterOptions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSParameterOptions.cpp; sourceTree = "<group>"; };
+		6BCF960F215075C700CC882B /* MaaSParameterOptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSParameterOptions.hpp; sourceTree = "<group>"; };
+		6BCF961321517AED00CC882B /* MaaSImageProcessBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSImageProcessBase.cpp; sourceTree = "<group>"; };
+		6BCF961421517AED00CC882B /* MaaSImageProcessBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSImageProcessBase.hpp; sourceTree = "<group>"; };
+		6BCF961821517DB700CC882B /* cvneon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cvneon.cpp; sourceTree = "<group>"; };
+		6BCF961921517DB700CC882B /* cvneon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvneon.h; sourceTree = "<group>"; };
+		6BCF961E2151817100CC882B /* MaaSImageProcessFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaaSImageProcessFacade.h; sourceTree = "<group>"; };
+		6BCF961F2151817100CC882B /* MaaSImageProcessFacade.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MaaSImageProcessFacade.mm; sourceTree = "<group>"; };
+		6BCF9624215183DF00CC882B /* MaaSEdgeDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSEdgeDetection.cpp; sourceTree = "<group>"; };
+		6BCF9625215183DF00CC882B /* MaaSEdgeDetection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSEdgeDetection.hpp; sourceTree = "<group>"; };
+		6BCF962A21518B2300CC882B /* MaaSContourDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSContourDetection.cpp; sourceTree = "<group>"; };
+		6BCF962B21518B2300CC882B /* MaaSContourDetection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSContourDetection.hpp; sourceTree = "<group>"; };
+		6BCF96302152199400CC882B /* MaaSHoughLinesDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSHoughLinesDetection.cpp; sourceTree = "<group>"; };
+		6BCF96312152199400CC882B /* MaaSHoughLinesDetection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSHoughLinesDetection.hpp; sourceTree = "<group>"; };
+		6BFDC85021643469000FA40E /* MaaSCroppedImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaaSCroppedImage.cpp; sourceTree = "<group>"; };
+		6BFDC85121643469000FA40E /* MaaSCroppedImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MaaSCroppedImage.hpp; sourceTree = "<group>"; };
+		6BFDC8B32166A837000FA40E /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		6FBD34F627E06864861197A6 /* Pods-MaaSDocDetectionSDKFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaaSDocDetectionSDKFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaaSDocDetectionSDKFrameworkTests/Pods-MaaSDocDetectionSDKFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A36795A729461F722F1D9CF8 /* Pods-MaaSDocDetectionSDKFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaaSDocDetectionSDKFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaaSDocDetectionSDKFrameworkTests/Pods-MaaSDocDetectionSDKFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		B078035D06433FA492CB6038 /* Pods-MaaSDocDetectionSDKFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaaSDocDetectionSDKFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaaSDocDetectionSDKFramework/Pods-MaaSDocDetectionSDKFramework.release.xcconfig"; sourceTree = "<group>"; };
+		C32178BA91D7CD3C3DBCB123 /* libPods-MaaSDocDetectionSDKFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaaSDocDetectionSDKFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2469E4813F5EC942FFBCE0 /* libPods-MaaSDocDetectionSDKFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaaSDocDetectionSDKFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BCF9492215027CE00CC882B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCF949C215027CF00CC882B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCF94A0215027CF00CC882B /* MaaSDocDetectionSDKFramework.framework in Frameworks */,
+				89FFA84203848EDD0D95E4F2 /* libPods-MaaSDocDetectionSDKFrameworkTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5544813F757CFD6635222218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BFDC8B32166A837000FA40E /* Vision.framework */,
+				DB2469E4813F5EC942FFBCE0 /* libPods-MaaSDocDetectionSDKFrameworkTests.a */,
+				C32178BA91D7CD3C3DBCB123 /* libPods-MaaSDocDetectionSDKFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B8B24B72162A6960078A482 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6B8B24BD2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.h */,
+				6B8B24BE2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m */,
+				6B8B24BF2162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib */,
+				6B8EC68F21544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.h */,
+				6B8EC69021544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6B8EC68D21544FCE002C38A4 /* LiveCapture */ = {
+			isa = PBXGroup;
+			children = (
+				6B8EC68E21544FEF002C38A4 /* MaaSDocDetectionLiveCapture.h */,
+				6B8EC69121544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m */,
+			);
+			path = LiveCapture;
+			sourceTree = "<group>";
+		};
+		6BCF948C215027CE00CC882B = {
+			isa = PBXGroup;
+			children = (
+				6BCF9498215027CE00CC882B /* MaaSDocDetectionSDKFramework */,
+				6BCF94A3215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests */,
+				6BCF9497215027CE00CC882B /* Products */,
+				E7C4417E779E3A1BBA87D45A /* Pods */,
+				5544813F757CFD6635222218 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BCF9497215027CE00CC882B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9496215027CE00CC882B /* MaaSDocDetectionSDKFramework.framework */,
+				6BCF949F215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BCF9498215027CE00CC882B /* MaaSDocDetectionSDKFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6BFDC84F216433DF000FA40E /* CroppedImage */,
+				6B8B24B72162A6960078A482 /* UI */,
+				6B8EC68D21544FCE002C38A4 /* LiveCapture */,
+				6BCF962F215214B700CC882B /* HoughLinesDetection */,
+				6BCF96292151863800CC882B /* ContourDetection */,
+				6BCF9623215183BE00CC882B /* EdgeDetection */,
+				6BCF961D215180BF00CC882B /* Base */,
+				6BCF955621506BE900CC882B /* Utils */,
+				6BCF955D21506D2000CC882B /* Supporting Files */,
+				6BCF9499215027CE00CC882B /* MaaSDocDetectionSDKFramework.h */,
+				6B8EC65D2152D451002C38A4 /* MaaSDocDetectionSDK.h */,
+				6B8EC65E2152D451002C38A4 /* MaaSDocDetectionSDK.mm */,
+				6BCF961E2151817100CC882B /* MaaSImageProcessFacade.h */,
+				6BCF961F2151817100CC882B /* MaaSImageProcessFacade.mm */,
+			);
+			path = MaaSDocDetectionSDKFramework;
+			sourceTree = "<group>";
+		};
+		6BCF94A3215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF94A4215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.m */,
+				6BCF94A6215027CF00CC882B /* Info.plist */,
+			);
+			path = MaaSDocDetectionSDKFrameworkTests;
+			sourceTree = "<group>";
+		};
+		6BCF955621506BE900CC882B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF955B21506CC000CC882B /* UIImage+OpenCV.h */,
+				6BCF960B21506F5B00CC882B /* UIImage+OpenCV.mm */,
+				6BB3C8AE2167E310009583FA /* UIImage+Utils.h */,
+				6BB3C8B02167E34D009583FA /* UIImage+Utils.m */,
+				6BCF961821517DB700CC882B /* cvneon.cpp */,
+				6BCF961921517DB700CC882B /* cvneon.h */,
+				6B8EC6582152CF12002C38A4 /* MaaSDocDetectionUtil.cpp */,
+				6B8EC6592152CF12002C38A4 /* MaaSDocDetectionUtil.hpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6BCF955D21506D2000CC882B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF949A215027CE00CC882B /* Info.plist */,
+				6BCF960421506DCA00CC882B /* MaaSDocDetectionSDKPrefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BCF961D215180BF00CC882B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF960E215075C700CC882B /* MaaSParameterOptions.cpp */,
+				6BCF960F215075C700CC882B /* MaaSParameterOptions.hpp */,
+				6BCF961321517AED00CC882B /* MaaSImageProcessBase.cpp */,
+				6BCF961421517AED00CC882B /* MaaSImageProcessBase.hpp */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6BCF9623215183BE00CC882B /* EdgeDetection */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9624215183DF00CC882B /* MaaSEdgeDetection.cpp */,
+				6BCF9625215183DF00CC882B /* MaaSEdgeDetection.hpp */,
+			);
+			path = EdgeDetection;
+			sourceTree = "<group>";
+		};
+		6BCF96292151863800CC882B /* ContourDetection */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF962A21518B2300CC882B /* MaaSContourDetection.cpp */,
+				6BCF962B21518B2300CC882B /* MaaSContourDetection.hpp */,
+			);
+			path = ContourDetection;
+			sourceTree = "<group>";
+		};
+		6BCF962F215214B700CC882B /* HoughLinesDetection */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF96302152199400CC882B /* MaaSHoughLinesDetection.cpp */,
+				6BCF96312152199400CC882B /* MaaSHoughLinesDetection.hpp */,
+			);
+			path = HoughLinesDetection;
+			sourceTree = "<group>";
+		};
+		6BFDC84F216433DF000FA40E /* CroppedImage */ = {
+			isa = PBXGroup;
+			children = (
+				6BFDC85021643469000FA40E /* MaaSCroppedImage.cpp */,
+				6BFDC85121643469000FA40E /* MaaSCroppedImage.hpp */,
+			);
+			path = CroppedImage;
+			sourceTree = "<group>";
+		};
+		E7C4417E779E3A1BBA87D45A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C278E9BAC05918F52F7343E /* Pods-MaaSDocDetectionSDKFramework.debug.xcconfig */,
+				B078035D06433FA492CB6038 /* Pods-MaaSDocDetectionSDKFramework.release.xcconfig */,
+				6FBD34F627E06864861197A6 /* Pods-MaaSDocDetectionSDKFrameworkTests.debug.xcconfig */,
+				A36795A729461F722F1D9CF8 /* Pods-MaaSDocDetectionSDKFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BCF9493215027CE00CC882B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8EC69321544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.h in Headers */,
+				6B8EC65F2152D451002C38A4 /* MaaSDocDetectionSDK.h in Headers */,
+				6BCF962E21518B2300CC882B /* MaaSContourDetection.hpp in Headers */,
+				6BCF960521506DCA00CC882B /* MaaSDocDetectionSDKPrefix.pch in Headers */,
+				6BCF9628215183DF00CC882B /* MaaSEdgeDetection.hpp in Headers */,
+				6BCF961C21517DB700CC882B /* cvneon.h in Headers */,
+				6BCF94A7215027CF00CC882B /* MaaSDocDetectionSDKFramework.h in Headers */,
+				6BCF955C21506CC000CC882B /* UIImage+OpenCV.h in Headers */,
+				6BB3C8AF2167E310009583FA /* UIImage+Utils.h in Headers */,
+				6B8EC65C2152CF12002C38A4 /* MaaSDocDetectionUtil.hpp in Headers */,
+				6B8B24C02162A76A0078A482 /* MaaSDocDetectionPreviewViewController.h in Headers */,
+				6BCF96342152199400CC882B /* MaaSHoughLinesDetection.hpp in Headers */,
+				6BCF961721517AED00CC882B /* MaaSImageProcessBase.hpp in Headers */,
+				6BFDC85421643469000FA40E /* MaaSCroppedImage.hpp in Headers */,
+				6BCF96202151817100CC882B /* MaaSImageProcessFacade.h in Headers */,
+				6BCF9612215075C700CC882B /* MaaSParameterOptions.hpp in Headers */,
+				6B8EC69221544FEF002C38A4 /* MaaSDocDetectionLiveCapture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6BCF9495215027CE00CC882B /* MaaSDocDetectionSDKFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCF94AA215027CF00CC882B /* Build configuration list for PBXNativeTarget "MaaSDocDetectionSDKFramework" */;
+			buildPhases = (
+				C4CC884EAB94AC5896D60BA4 /* [CP] Check Pods Manifest.lock */,
+				6BCF9491215027CE00CC882B /* Sources */,
+				6BCF9492215027CE00CC882B /* Frameworks */,
+				6BCF9493215027CE00CC882B /* Headers */,
+				6BCF9494215027CE00CC882B /* Resources */,
+				0C8FECD8808D797E64D72CEE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaaSDocDetectionSDKFramework;
+			productName = MaaSDocDetectionSDKFramework;
+			productReference = 6BCF9496215027CE00CC882B /* MaaSDocDetectionSDKFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BCF949E215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BCF94AD215027CF00CC882B /* Build configuration list for PBXNativeTarget "MaaSDocDetectionSDKFrameworkTests" */;
+			buildPhases = (
+				A22E46EACC7A2F2AF27203EB /* [CP] Check Pods Manifest.lock */,
+				6BCF949B215027CF00CC882B /* Sources */,
+				6BCF949C215027CF00CC882B /* Frameworks */,
+				6BCF949D215027CF00CC882B /* Resources */,
+				86CB11FE5F54BFC8CEA6B9B0 /* [CP] Embed Pods Frameworks */,
+				079364ACB95D9E7B52070251 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BCF94A2215027CF00CC882B /* PBXTargetDependency */,
+			);
+			name = MaaSDocDetectionSDKFrameworkTests;
+			productName = MaaSDocDetectionSDKFrameworkTests;
+			productReference = 6BCF949F215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BCF948D215027CE00CC882B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Xinbo Wu";
+				TargetAttributes = {
+					6BCF9495215027CE00CC882B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					6BCF949E215027CF00CC882B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 6BCF9490215027CE00CC882B /* Build configuration list for PBXProject "MaaSDocDetectionSDKFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6BCF948C215027CE00CC882B;
+			productRefGroup = 6BCF9497215027CE00CC882B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BCF9495215027CE00CC882B /* MaaSDocDetectionSDKFramework */,
+				6BCF949E215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BCF9494215027CE00CC882B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8B24C32162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCF949D215027CF00CC882B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8B24C42162A76A0078A482 /* MaaSDocDetectionPreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079364ACB95D9E7B52070251 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaaSDocDetectionSDKFrameworkTests/Pods-MaaSDocDetectionSDKFrameworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C8FECD8808D797E64D72CEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaaSDocDetectionSDKFramework/Pods-MaaSDocDetectionSDKFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86CB11FE5F54BFC8CEA6B9B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaaSDocDetectionSDKFrameworkTests/Pods-MaaSDocDetectionSDKFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22E46EACC7A2F2AF27203EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaaSDocDetectionSDKFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CC884EAB94AC5896D60BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaaSDocDetectionSDKFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BCF9491215027CE00CC882B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BCF9626215183DF00CC882B /* MaaSEdgeDetection.cpp in Sources */,
+				6BCF961A21517DB700CC882B /* cvneon.cpp in Sources */,
+				6B8B24C12162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m in Sources */,
+				6BB3C8B12167E34D009583FA /* UIImage+Utils.m in Sources */,
+				6BFDC85221643469000FA40E /* MaaSCroppedImage.cpp in Sources */,
+				6BCF962C21518B2300CC882B /* MaaSContourDetection.cpp in Sources */,
+				6B8EC6602152D451002C38A4 /* MaaSDocDetectionSDK.mm in Sources */,
+				6BCF96322152199400CC882B /* MaaSHoughLinesDetection.cpp in Sources */,
+				6BCF961521517AED00CC882B /* MaaSImageProcessBase.cpp in Sources */,
+				6B8EC69421544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m in Sources */,
+				6BCF96212151817100CC882B /* MaaSImageProcessFacade.mm in Sources */,
+				6B8EC65A2152CF12002C38A4 /* MaaSDocDetectionUtil.cpp in Sources */,
+				6BCF9610215075C700CC882B /* MaaSParameterOptions.cpp in Sources */,
+				6BCF960C21506F5B00CC882B /* UIImage+OpenCV.mm in Sources */,
+				6B8EC69621544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCF949B215027CF00CC882B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8EC6612152D451002C38A4 /* MaaSDocDetectionSDK.mm in Sources */,
+				6B8EC69521544FEF002C38A4 /* MaaSDocDetectionAVCamPreviewView.m in Sources */,
+				6BFDC85321643469000FA40E /* MaaSCroppedImage.cpp in Sources */,
+				6BB3C8B22167E34D009583FA /* UIImage+Utils.m in Sources */,
+				6BCF961B21517DB700CC882B /* cvneon.cpp in Sources */,
+				6BCF9611215075C700CC882B /* MaaSParameterOptions.cpp in Sources */,
+				6B8B24C22162A76A0078A482 /* MaaSDocDetectionPreviewViewController.m in Sources */,
+				6B8EC65B2152CF12002C38A4 /* MaaSDocDetectionUtil.cpp in Sources */,
+				6BCF96332152199400CC882B /* MaaSHoughLinesDetection.cpp in Sources */,
+				6BCF960D21506F5B00CC882B /* UIImage+OpenCV.mm in Sources */,
+				6BCF961621517AED00CC882B /* MaaSImageProcessBase.cpp in Sources */,
+				6B8EC69721544FEF002C38A4 /* MaaSDocDetectionLiveCapture.m in Sources */,
+				6BCF962D21518B2300CC882B /* MaaSContourDetection.cpp in Sources */,
+				6BCF94A5215027CF00CC882B /* MaaSDocDetectionSDKFrameworkTests.m in Sources */,
+				6BCF9627215183DF00CC882B /* MaaSEdgeDetection.cpp in Sources */,
+				6BCF96222151817100CC882B /* MaaSImageProcessFacade.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BCF94A2215027CF00CC882B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BCF9495215027CE00CC882B /* MaaSDocDetectionSDKFramework */;
+			targetProxy = 6BCF94A1215027CF00CC882B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6BCF94A8215027CF00CC882B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BCF94A9215027CF00CC882B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BCF94AB215027CF00CC882B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C278E9BAC05918F52F7343E /* Pods-MaaSDocDetectionSDKFramework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KNT489GQP6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaaSDocDetectionSDKFramework/Supporting Files/MaaSDocDetectionSDKPrefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MaaSDocDetectionSDKFramework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiberlink.MaaSDocDetectionSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BCF94AC215027CF00CC882B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B078035D06433FA492CB6038 /* Pods-MaaSDocDetectionSDKFramework.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KNT489GQP6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaaSDocDetectionSDKFramework/Supporting Files/MaaSDocDetectionSDKPrefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/MaaSDocDetectionSDKFramework/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiberlink.MaaSDocDetectionSDKFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BCF94AE215027CF00CC882B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBD34F627E06864861197A6 /* Pods-MaaSDocDetectionSDKFrameworkTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNT489GQP6;
+				INFOPLIST_FILE = MaaSDocDetectionSDKFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiberlink.MaaSDocDetectionSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BCF94AF215027CF00CC882B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36795A729461F722F1D9CF8 /* Pods-MaaSDocDetectionSDKFrameworkTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNT489GQP6;
+				INFOPLIST_FILE = MaaSDocDetectionSDKFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiberlink.MaaSDocDetectionSDKFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BCF9490215027CE00CC882B /* Build configuration list for PBXProject "MaaSDocDetectionSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCF94A8215027CF00CC882B /* Debug */,
+				6BCF94A9215027CF00CC882B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCF94AA215027CF00CC882B /* Build configuration list for PBXNativeTarget "MaaSDocDetectionSDKFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCF94AB215027CF00CC882B /* Debug */,
+				6BCF94AC215027CF00CC882B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BCF94AD215027CF00CC882B /* Build configuration list for PBXNativeTarget "MaaSDocDetectionSDKFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BCF94AE215027CF00CC882B /* Debug */,
+				6BCF94AF215027CF00CC882B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BCF948D215027CE00CC882B /* Project object */;
+}

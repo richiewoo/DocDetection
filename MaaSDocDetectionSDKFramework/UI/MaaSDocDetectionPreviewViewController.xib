@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaaSDocDetectionPreviewViewController">
+            <connections>
+                <outlet property="captureButton" destination="CGA-d7-iM3" id="pqm-T0-vFs"/>
+                <outlet property="previewView" destination="v9X-Zv-A2w" id="eTu-Tu-LYS"/>
+                <outlet property="samplePickerView" destination="TZ8-Ce-o8j" id="Sn1-je-f8e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-Zv-A2w" customClass="MaaSDocDetectionAVCamPreviewView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZ8-Ce-o8j">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="QBR-ko-neE" userLabel="100"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yBZ-9b-hID"/>
+                        <outlet property="delegate" destination="-1" id="JYP-ma-uHU"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGA-d7-iM3">
+                    <rect key="frame" x="0.0" y="547" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="3oA-I7-i82"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="ONd-03-BRy"/>
+                        <constraint firstAttribute="height" constant="100" id="g5F-De-luA"/>
+                        <constraint firstAttribute="width" constant="100" id="ujv-7i-HsR"/>
+                    </constraints>
+                    <state key="normal" title="Capture">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="captureDoc:" destination="-1" eventType="touchUpInside" id="DOk-EH-R94"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TZ8-Ce-o8j" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="B9x-B7-3pR"/>
+                <constraint firstItem="v9X-Zv-A2w" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Q5i-0b-kIr"/>
+                <constraint firstItem="v9X-Zv-A2w" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WYg-E4-9UZ"/>
+                <constraint firstAttribute="bottom" secondItem="CGA-d7-iM3" secondAttribute="bottom" constant="20" id="aHE-Dt-lei"/>
+                <constraint firstItem="TZ8-Ce-o8j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jME-70-LaV"/>
+                <constraint firstItem="CGA-d7-iM3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n5W-KH-2eZ"/>
+                <constraint firstItem="v9X-Zv-A2w" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="p7U-eD-HFu"/>
+                <constraint firstItem="v9X-Zv-A2w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vBz-1M-Exd"/>
+                <constraint firstItem="TZ8-Ce-o8j" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="wC4-xr-j25"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
